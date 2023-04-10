@@ -3,7 +3,7 @@
   <div class="clearTodoContainer">
     <span class="clearTodo" @click="openClearConfirmModal">Clear All</span>
 
-    <modal v-if="showModal" @close="closeModal">
+    <modal class="confirmModal" v-if="showModal" @close="closeModal">
       <h3 slot="header">경고</h3>
       <span slot="body">모든 TodoList를 삭제할까요?</span>
       <div class="confirm" slot="footer" @click="clearTodo">확인</div>
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style scoped>
-div {
+.clearTodoContainer {
   line-height: 40px;
   height: 40px;
   border-radius: 5px;

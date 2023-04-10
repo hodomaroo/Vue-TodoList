@@ -104,7 +104,7 @@ export default {
 body {
   text-align: center;
   background-color: aliceblue;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 input {
