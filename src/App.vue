@@ -102,33 +102,6 @@ export default {
 </script>
 
 <style>
-.todoHeader {
-  text-align: center;
-  background-color: aliceblue;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.todoInput {
-  text-align: center;
-  background-color: aliceblue;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.todoList {
-  text-align: center;
-  background-color: aliceblue;
-  width: 100%;
-  margin: 0 auto;
-}
-.todoFooter {
-  text-align: center;
-  background-color: aliceblue;
-  width: 100%;
-  margin: 0 auto;
-}
-
 button {
   border-style: groove;
 }
