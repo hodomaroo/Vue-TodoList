@@ -1,15 +1,16 @@
 <!-- 최상위 컴포넌트! -->
 <template>
   <div id="app">
-    <todoHeader></todoHeader>
-    <todoInput v-on:addTodo="addTodo"></todoInput>
+    <todoHeader class="todoHeader"></todoHeader>
+    <todoInput v-on:addTodo="addTodo" class="todoInput"></todoInput>
     <todoList
       :todoItemList="todoList"
       @deleteTodo="deleteTodo"
       @convertTodo="convertTodo"
       @changeTodo="changeTodo"
+      class="todoList"
     ></todoList>
-    <todoFooter @clearTodo="clearTodo"></todoFooter>
+    <todoFooter @clearTodo="clearTodo" class="todoFooter"></todoFooter>
   </div>
 </template>
 
@@ -101,15 +102,31 @@ export default {
 </script>
 
 <style>
-body {
+.todoHeader {
   text-align: center;
   background-color: aliceblue;
   width: 100%;
   margin: 0 auto;
 }
-input {
-  border-style: groove;
-  width: 200px;
+
+.todoInput {
+  text-align: center;
+  background-color: aliceblue;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.todoList {
+  text-align: center;
+  background-color: aliceblue;
+  width: 100%;
+  margin: 0 auto;
+}
+.todoFooter {
+  text-align: center;
+  background-color: aliceblue;
+  width: 100%;
+  margin: 0 auto;
 }
 
 button {

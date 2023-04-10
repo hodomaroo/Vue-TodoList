@@ -1,7 +1,7 @@
 <!-- 하단 버튼 화면 구성 -->
 <template>
   <div class="clearTodoContainer">
-    <span class="clearTodo" @click="openClearConfirmModal">Clear All</span>
+    <span class="clearTodo" @click="openClearConfirmModal">다 끝났어요!</span>
 
     <modal class="confirmModal" v-if="showModal" @close="closeModal">
       <h3 slot="header">경고</h3>

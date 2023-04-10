@@ -3,9 +3,9 @@
   <div class="inputBox shadow">
     <input
       type="text"
+      maxlength="15"
       v-model="newTodoItem"
-      placeholder="Type what you have to
-    do"
+      placeholder="오늘 할 일을 적어볼까요?"
       v-on:keyup.enter="addTodo"
     />
     <span
